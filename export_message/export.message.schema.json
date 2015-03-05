@@ -28,7 +28,7 @@
             "type": "string",
             "description": "运输工具名称"
         },
-        "shippment_reference_no": {
+        "shipment_reference_no": {
             "type": "string",
             "description": "航次号"
         },
