@@ -1,0 +1,90 @@
+{
+    "title": "Export",
+    "properties": {
+        "entry_number": {
+            "type":"string",
+            "description":"报关单号"
+        },
+        "trade_name": {
+            "type": "string",
+            "description": "经营单位"
+        },
+        "forward_agent": {
+            "type": "string",
+            "description": "申报单位"
+        },
+        "ultimate_destination": {
+            "type": "string",
+            "description": "运抵国（地区）"
+        },
+        "method_of_transportation": {
+            "type": "string",
+            "description": "运输方式"
+        },
+        "export_carrier": {
+            "type": "string",
+            "description": "运输工具名称"
+        },
+        "shippment_reference_no": {
+            "type": "string",
+            "description": "航次号"
+        },
+        "contract_no": {
+            "type": "string",
+            "description": "合同协议号"
+        },
+        "container_id": {
+            "type": "string",
+            "description": "集装箱号"
+        },
+        "trade_mode": {
+            "type": "string",
+            "description": "监管方式"
+        },
+        "goods_no": {
+            "type": "string",
+            "description": "商品序号"
+        },
+        "goods_code": {
+            "type": "string",
+            "description": "商品编码"
+        },
+        "quantity": {
+            "type": "number",
+            "description": "法定数量",
+            "minimum": 0
+        },
+        "unit": {
+            "type": "string",
+            "description": "法定单位"
+        },
+        "currency": {
+            "type": "string",
+            "description": "币制"
+        },
+        "unit_price": {
+            "type": "string",
+            "description": "成交单价"
+        },
+        "total_price": {
+            "type": "string",
+            "description": "成交总价"
+        },
+        "port_of_export": {
+            "type": "string",
+            "description": "出口口岸"
+        },
+        "manufacturer": {
+            "type": "string",
+            "description": "生产厂家"
+        },
+        "destination_port": {
+            "type": "string",
+            "description": "指运港"
+        },
+        "declare_port": {
+            "type":"string",
+            "description":"申报地海关"
+        }
+    }
+}
