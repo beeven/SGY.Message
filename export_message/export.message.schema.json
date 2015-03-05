@@ -5,6 +5,9 @@
             "type":"string",
             "description":"报关单号"
         },
+        "date": {
+            "type":"string"
+        },
         "trade_name": {
             "type": "string",
             "description": "经营单位"
@@ -41,35 +44,44 @@
             "type": "string",
             "description": "监管方式"
         },
-        "goods_no": {
-            "type": "string",
-            "description": "商品序号"
+        "goods_information": {
+            "type":"array",
+            "items": {
+                "title":"Goods Information",
+                "properties" : {
+                    "goods_no": {
+                        "type": "string",
+                        "description": "商品序号"
+                    },
+                    "goods_code": {
+                        "type": "string",
+                        "description": "商品编码"
+                    },
+                    "quantity": {
+                        "type": "number",
+                        "description": "法定数量",
+                        "minimum": 0
+                    },
+                    "unit": {
+                        "type": "string",
+                        "description": "法定单位"
+                    },
+                    "currency": {
+                        "type": "string",
+                        "description": "币制"
+                    },
+                    "unit_price": {
+                        "type": "string",
+                        "description": "成交单价"
+                    },
+                    "total_price": {
+                        "type": "string",
+                        "description": "成交总价"
+                    }
+                }
+            }
         },
-        "goods_code": {
-            "type": "string",
-            "description": "商品编码"
-        },
-        "quantity": {
-            "type": "number",
-            "description": "法定数量",
-            "minimum": 0
-        },
-        "unit": {
-            "type": "string",
-            "description": "法定单位"
-        },
-        "currency": {
-            "type": "string",
-            "description": "币制"
-        },
-        "unit_price": {
-            "type": "string",
-            "description": "成交单价"
-        },
-        "total_price": {
-            "type": "string",
-            "description": "成交总价"
-        },
+        
         "port_of_export": {
             "type": "string",
             "description": "出口口岸"
@@ -78,13 +90,14 @@
             "type": "string",
             "description": "生产厂家"
         },
-        "destination_port": {
+        "port_of_destination": {
             "type": "string",
             "description": "指运港"
         },
-        "declare_port": {
+        "customs_house": {
             "type":"string",
             "description":"申报地海关"
         }
-    }
+    },
+    "required":["entry_number"]
 }
