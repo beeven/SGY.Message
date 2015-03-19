@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<message xmlns="http://guangzhou.customs.gov.cn/SGY/export" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <message_id>5092339A-03C6-4344-8271-5F6F1B893F18</message_id>
+    <date_created>2015-03-19T14:10:25+08:00</date_created>
+    <message_body>
+        <entry_num>516520150655000669</entry_num>
+        <exporter_name>佛山市高明富铭贸易有限公司</exporter_name>
+        <exporter_code>4406964136</exporter_code>
+        <agent_name>佛山市口岸报关有限公司</agent_name>
+        <agent_code>4406980008</agent_code>
+        <final_destination>142</final_destination>
+        <transport_mode>2</transport_mode>
+        <carrier_name>5150550069</carrier_name>
+        <shipment_ref_num>150101000000</shipment_ref_num>
+        <contract_num>1411LSY623E</contract_num>
+        <container_id>LYCU9082142</container_id>
+        <trade_mode>0110</trade_mode>
+        <export_port>5301</export_port>
+        <destination_port>142</destination_port>
+        <customs_house>5141</customs_house>
+        <manifest>
+            <article>
+                <num>1</num>
+                <name>LED带形灯</name>
+                <hs_code>9405409000</hs_code>
+                <quantity>120</quantity>
+                <unit>035</unit>
+                <currency>502</currency>
+                <unit_price>13.8</unit_price>
+                <total_price>6900.0</total_price>
+            </article>
+            <article>
+                <num>2</num>
+                <name>LED条形灯套装</name>
+                <hs_code>9405409000</hs_code>
+                <quantity>168</quantity>
+                <unit>035</unit>
+                <currency>502</currency>
+                <unit_price>13.5</unit_price>
+                <total_price>6804.0</total_price>
+            </article>
+        </manifest>
+    </message_body>
+</message>

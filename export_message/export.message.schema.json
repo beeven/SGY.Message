@@ -2,37 +2,45 @@
     "title": "Export",
     "properties": {
         "entry_number": {
-            "type":"string",
-            "description":"报关单号"
+            "type": "string",
+            "description": "报关单号"
         },
         "date": {
-            "type":"string"
+            "type": "string"
         },
-        "trade_name": {
+        "exporter_name": {
             "type": "string",
             "description": "经营单位"
         },
-        "forward_agent": {
+        "exporter_code": {
+            "type": "string",
+            "description": "经营单位编码"
+        },
+        "agent_name": {
             "type": "string",
             "description": "申报单位"
         },
-        "ultimate_destination": {
+        "agent_code": {
+            "type": "string",
+            "description": "申报单位编码"
+        },
+        "final_destination": {
             "type": "string",
             "description": "运抵国（地区）"
         },
-        "method_of_transportation": {
+        "transport_mode": {
             "type": "string",
             "description": "运输方式"
         },
-        "export_carrier": {
+        "carrier_name": {
             "type": "string",
             "description": "运输工具名称"
         },
-        "shipment_reference_no": {
+        "shipment_reference_num": {
             "type": "string",
             "description": "航次号"
         },
-        "contract_no": {
+        "contract_num": {
             "type": "string",
             "description": "合同协议号"
         },
@@ -44,18 +52,23 @@
             "type": "string",
             "description": "监管方式"
         },
-        "goods_information": {
-            "type":"array",
+        "manifest": {
+            "type": "array",
             "items": {
-                "title":"Goods Information",
-                "properties" : {
-                    "goods_no": {
+                "title": "Goods Information",
+                "properties": {
+                    "num": {
                         "type": "string",
                         "description": "商品序号"
                     },
-                    "goods_code": {
+                    "hs_code": {
                         "type": "string",
                         "description": "商品编码"
+                    },
+
+                    "manufacturer": {
+                        "type": "string",
+                        "description": "生产厂家"
                     },
                     "quantity": {
                         "type": "number",
@@ -81,23 +94,19 @@
                 }
             }
         },
-        
+
         "port_of_export": {
             "type": "string",
             "description": "出口口岸"
-        },
-        "manufacturer": {
-            "type": "string",
-            "description": "生产厂家"
         },
         "port_of_destination": {
             "type": "string",
             "description": "指运港"
         },
         "customs_house": {
-            "type":"string",
-            "description":"申报地海关"
+            "type": "string",
+            "description": "申报地海关"
         }
     },
-    "required":["entry_number"]
+    "required": ["entry_number"]
 }

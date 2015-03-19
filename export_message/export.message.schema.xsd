@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://guangzhou.customs.gov.cn/SGY/export">
+
+<xs:element name="message">
+    <xs:complexType>
+        <xs:all>
+            <xs:element name="message_id" type="xs:string" />
+            <xs:element name="date_created" type="xs:dateTime" />
+            <xs:element name="message_body">
+                <xs:complexType>
+                    <xs:all>
+                        <xs:element name="entry_num" type="xs:string"/>
+                        <xs:element name="exporter_name" type="xs:string"/>
+                        <xs:element name="exporter_code" type="xs:string"/>
+                        <xs:element name="agent_name" type="xs:string"/>
+                        <xs:element name="agent_code" type="xs:string"/>
+                        <xs:element name="final_destination" type="xs:string"/>
+                        <xs:element name="transport_mode" type="xs:string"/>
+                        <xs:element name="carrier_name" type="xs:string"/>
+                        <xs:element name="shipment_ref_num" type="xs:string"/>
+                        <xs:element name="contract_num" type="xs:string"/>
+                        <xs:element name="container_id" type="xs:string"/>
+                        <xs:element name="trade_mode" type="xs:string"/>
+                        <xs:element name="export_port" type="xs:string"/>
+                        <xs:element name="destination_port" type="xs:string"/>
+                        <xs:element name="customs_house" type="xs:string"/>
+                        <xs:element name="manifest">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="article" maxOccurs="unbounded">
+                                        <xs:complexType>
+                                            <xs:all>
+                                                <xs:element name="num" type="xs:string"/>
+                                                <xs:element name="name" type="xs:string" />
+                                                <xs:element name="hs_code" type="xs:string"/>
+                                                <xs:element name="quantity" type="xs:positiveInteger"/>
+                                                <xs:element name="unit" type="xs:string"/>
+                                                <xs:element name="currency" type="xs:string"/>
+                                                <xs:element name="unit_price" type="xs:decimal"/>
+                                                <xs:element name="total_price" type="xs:decimal"/>
+                                            </xs:all>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:all>
+                </xs:complexType>
+            </xs:element>
+        </xs:all>
+    </xs:complexType>
+</xs:element>
+
+</xs:schema>
