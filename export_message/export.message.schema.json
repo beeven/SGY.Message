@@ -1,12 +1,16 @@
 {
     "title": "Export",
     "properties": {
+        "message_id": {
+            "type":"string",
+            "descript":"消息id, GUID"
+        },
+        "date_created": {
+            "type": "string"
+        },
         "entry_number": {
             "type": "string",
             "description": "报关单号"
-        },
-        "date": {
-            "type": "string"
         },
         "exporter_name": {
             "type": "string",
@@ -64,11 +68,6 @@
                     "hs_code": {
                         "type": "string",
                         "description": "商品编码"
-                    },
-
-                    "manufacturer": {
-                        "type": "string",
-                        "description": "生产厂家"
                     },
                     "quantity": {
                         "type": "number",

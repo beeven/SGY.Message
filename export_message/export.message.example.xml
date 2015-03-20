@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<message xmlns="http://guangzhou.customs.gov.cn/SGY/export" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="UTF-8"?>
+<message xmlns="http://guangzhou.customs.gov.cn/SGY/export/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <message_id>5092339A-03C6-4344-8271-5F6F1B893F18</message_id>
     <date_created>2015-03-19T14:10:25+08:00</date_created>
     <message_body>
